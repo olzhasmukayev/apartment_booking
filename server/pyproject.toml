@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "fastapi-application"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bcrypt = "^4.0.1"
+python-jose = "^3.3.0"
+pydantic= {extras = ["email"], version = "^1.10.4"}
+fastapi = "^0.95.2"
+uvicorn= {extras = ["standard"], version = "^0.20.0"}
+python-multipart = "^0.0.6"
+pymongo = {extras = ["srv"], version = "^4.3.3"}
+orjson = "^3.9.1"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+unstructured = "^0.8.1"
+chromadb = "^0.4.2"
+langchain = "^0.0.240"
+watermark = "^2.4.3"
+openai = "^0.27.8"
+jq = "^1.4.1"
+tiktoken = "^0.4.0"
+faiss-cpu = "^1.7.4"
+libmagic = "^1.0"
+python-magic = "^0.4.27"
+sentence-transformers = "^2.2.2"
+python-dotenv = "^1.0.0"
+pyppeteer = "^1.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+types-python-jose = "^3.3.4.7"
+ruff = "^0.0.271"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
